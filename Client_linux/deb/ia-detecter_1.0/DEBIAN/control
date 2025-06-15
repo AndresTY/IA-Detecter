@@ -2,7 +2,8 @@ Package: ia-detecter
 Version: 1.0
 Section: utils
 Priority: optional
-Architecture: amd64
+#Architecture: amd64
+Architecture: all
 Depends: python3, wmctrl
 Maintainer: AndresTY <san.duve@hotmail.com>
 Description: IA Detecter blocks input when LLMs or IAs are detected, requiring a password to unlock. Intended for academic use.

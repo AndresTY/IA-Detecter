@@ -3,6 +3,7 @@ pkgver=1.0
 pkgrel=1
 pkgdesc="IA Detecter is an application that detects the use of IAs and LLMs tools and blocks user input until the correct password is entered. This application is oriented toward academic settings, where the goal is to limit AI use for specific cases."
 arch=("x86_64")
+#arch=('any')
 url="https://github.com/AndresTY/IA_Detecter"
 license=('custom')
 depends=('python' 'wmctrl')
@@ -10,16 +11,12 @@ source=('script' 'config.ini' 'icon.ico')
 sha256sums=('SKIP' 'SKIP' 'SKIP')
 
 package() {
-    # Instalar ejecutable
     install -Dm755 "$srcdir/script" "$pkgdir/usr/bin/ia_detecter"
 
-    # Instalar config.ini en ubicación estándar
     install -Dm644 "$srcdir/config.ini" "$pkgdir/usr/share/ia_detecter/config.ini"
 
-    # Instalar ícono
     install -Dm644 "$srcdir/icon.ico" "$pkgdir/usr/share/icons/hicolor/256x256/apps/ia_detecter.ico"
 
-    # Instalar archivo .desktop
     install -Dm644 /dev/stdin "$pkgdir/usr/share/applications/ia_detecter.desktop" <<EOF
 [Desktop Entry]
 Name=IA Detecter

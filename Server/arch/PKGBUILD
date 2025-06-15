@@ -3,6 +3,7 @@ pkgver=1.0
 pkgrel=1
 pkgdesc="IA Detecter detects AI and LLM usage and blocks input until a password is entered. Intended for academic settings."
 arch=("x86_64")
+#arch=('any')
 url="https://github.com/AndresTY/IA_Detecter"
 license=('custom')
 depends=('python')
