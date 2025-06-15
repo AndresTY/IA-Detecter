@@ -23,7 +23,8 @@ class ManagerApp:
             print("Warning: icon.ico not found. Application will run without an icon.")
 
         self.config = configparser.ConfigParser()
-        self.config.read("config.ini")
+        #self.config.read("config.ini")
+        self.config.read("/usr/share/ia_detecter_server/config.ini")
 
         self.HOST = self.config.get("Settings", "host", fallback=get_ethernet_ip())
         self.PORT = self.config.get("Settings", "port", fallback="")

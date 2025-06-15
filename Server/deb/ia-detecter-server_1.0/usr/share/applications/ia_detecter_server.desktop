@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=IA Detecter Server
+Exec=ia_detecter_server
+Icon=ia_detecter_server
+Type=Application
+Categories=Utility;

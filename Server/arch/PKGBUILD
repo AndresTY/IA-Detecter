@@ -1,0 +1,28 @@
+pkgname=ia-detecter-server
+pkgver=1.0
+pkgrel=1
+pkgdesc="IA Detecter detects AI and LLM usage and blocks input until a password is entered. Intended for academic settings."
+arch=("x86_64")
+url="https://github.com/AndresTY/IA_Detecter"
+license=('custom')
+depends=('python')
+source=('server' 'config.ini' 'icono.ico')
+sha256sums=('SKIP' 'SKIP' 'SKIP')
+
+package() {
+  install -Dm755 "$srcdir/server" "$pkgdir/usr/bin/ia_detecter_server"
+
+  install -Dm644 "$srcdir/config.ini" "$pkgdir/usr/share/ia_detecter_server/config.ini"
+
+  install -Dm644 "$srcdir/icono.ico" "$pkgdir/usr/share/icons/hicolor/256x256/apps/ia_detecter_server.ico"
+
+  install -Dm644 /dev/stdin "$pkgdir/usr/share/applications/ia_detecter_server.desktop" <<EOF
+[Desktop Entry]
+Name=IA Detecter Server
+Exec=ia_detecter_server
+Icon=ia_detecter_server
+Type=Application
+Categories=Utility;
+EOF
+}
+

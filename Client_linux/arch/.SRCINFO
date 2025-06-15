@@ -1,0 +1,16 @@
+pkgbase = IA_Detecter
+	pkgdesc = IA Detecter is an application that detects the use of IAs and LLMs tools and blocks user input until the correct password is entered. This application is oriented toward academic settings, where the goal is to limit AI use for specific cases.
+	pkgver = 1.0
+	pkgrel = 1
+	url = https://github.com/AndresTY/IA_Detecter
+	arch = x86_64
+	depends = python
+	depends = wmctrl
+	source = script
+	source = config.ini
+	source = icon.ico
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = IA_Detecter

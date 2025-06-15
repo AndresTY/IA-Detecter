@@ -8,9 +8,6 @@ psutil==7.0.0
 pyinstaller==6.13.0
 pyinstaller-hooks-contrib==2025.4
 pynput==1.8.1
-pywin32==310
-pywin32-ctypes==0.2.3
-pywinauto==0.6.9
 setuptools==80.4.0
 six==1.17.0
 termcolor==3.1.0

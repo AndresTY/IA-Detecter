@@ -1,0 +1,8 @@
+Package: ia-detecter-server
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: python3
+Maintainer: AndresTY <san.duve@hotmail.com>
+Description: IA Detecter detects AI and LLM usage and blocks input until a password is entered. Intended for academic settings.

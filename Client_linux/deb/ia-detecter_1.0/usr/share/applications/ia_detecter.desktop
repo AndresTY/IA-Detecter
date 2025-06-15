@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=IA Detecter
+Exec=/usr/bin/ia_detecter
+Icon=ia_detecter
+Type=Application
+Categories=Utility;
